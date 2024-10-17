@@ -29,7 +29,7 @@ function getRandomCard() {
     }
 }
 
-windows.startGame = function () {
+window.startGame = function () {
     bet = parseInt(document.getElementById("bet-input").value)
 
     // Validation to ensure the bet is a valid number
@@ -73,7 +73,7 @@ function renderGame() {
     }
 }
 
-windows.newCard = function () {
+window.newCard = function () {
     if (isAlive && !hasBlackJack) {
         let card = getRandomCard()
         sum += card
