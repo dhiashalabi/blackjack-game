@@ -8,13 +8,9 @@ This is a simple web-based Blackjack game built using HTML, CSS, and JavaScript.
 - **Draw a New Card**: Click the "NEW CARD" button to draw another card and add its value to your sum.
 - **Win or Lose**: Try to reach a sum of 21 (Blackjack) to win, but be careful not to exceed 21, or you'll lose the game!
 
-## Demo
-
-![Blackjack Game Demo](images/table.png)
-
 ## Live Demo
 
-You can play the Blackjack game live [here](https://blackjack.dhiashalabi.info).
+You can play the Blackjack game live [here](https://blackjack.dhiashalabi.live).
 
 ## Technologies Used
 
