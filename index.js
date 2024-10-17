@@ -29,15 +29,15 @@ function getRandomCard() {
     }
 }
 
-function startGame() {
+windows.startGame = function () {
     bet = parseInt(document.getElementById("bet-input").value)
-    
+
     // Validation to ensure the bet is a valid number
     if (isNaN(bet) || bet > player.chips || bet <= 0) {
         alert("Please enter a valid bet amount!")
         return
     }
-    
+
     isAlive = true
     hasBlackJack = false
     let firstCard = getRandomCard()
@@ -62,7 +62,7 @@ function renderGame() {
         isAlive = false
         player.chips -= bet
     }
-    
+
     messageEl.textContent = message
     chipsEl.textContent = "Chips: $" + player.chips
 
@@ -73,7 +73,7 @@ function renderGame() {
     }
 }
 
-function newCard() {
+windows.newCard = function () {
     if (isAlive && !hasBlackJack) {
         let card = getRandomCard()
         sum += card
